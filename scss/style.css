@@ -145,7 +145,7 @@ a:hover {
 
 #main {
   padding: 10px;
-  width: 80%;
+  width: 900px;
   margin: 40px auto; }
   #main section.important, #main section.recomended {
     -webkit-border-radius: 5px;
@@ -172,12 +172,16 @@ a:hover {
     border-bottom: 1px solid #f1f1f1; }
   #main article header {
     text-align: left;
-    margin-left: 140px;
+    margin-left: 145px;
     color: #222;
     font-size: 20px;
     margin-bottom: 5px;
     margin-top: 15px; }
   #main article img.img {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
     float: left;
     margin-left: 10px;
     margin-top: -25px;
