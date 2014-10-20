@@ -1,4 +1,11 @@
+@charset "utf-8";
 @import "links.scss";
 @import "buttons.scss";
 @import "variables.scss";
 @import "mixins.scss";
+@import "media.scss";
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+* {
+  margin: 0;
+  padding: 0;
+}
