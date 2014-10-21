@@ -5,4 +5,8 @@
           border-radius: $radius;
 }
 
+@mixin linksTd {
+	text-decoration: none;
+}
+
 

@@ -7,26 +7,46 @@ html, body {
   margin: 0; }
 
 @media only screen and (min-width: 400px) and (max-width: 580px) {
+  div.contentHeader {
+    position: relative;
+    top: 0;
+    right: 0;
+    padding: 20px; }
+
   header.header {
     background: url(../img/img.jpg) no-repeat center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    position: relative;
     width: 100%;
     height: 250px; }
+
+  header.header ul {
+    position: relative; }
 
   header.header ul li {
     list-style-type: none; }
 
   li.logo {
-    background-color: #01adff;
     float: left;
     display: block;
     width: 50px;
     height: 50px; }
 
-  .header ul li > ul li {
-    float: right; } }
+  header.header ul li.mainLink:nth-child(2) {
+    float: right; }
+
+  header.header ul li.mainLink a.target {
+    cursor: pointer;
+    display: block; }
+
+  header.header ul li.mainLink ul.dropDown {
+    position: absolute;
+    display: none;
+    margin-right: -100px;
+    width: 200px;
+    cursor: pointer; } }
 
 /*# sourceMappingURL=landingPage.css.map */
