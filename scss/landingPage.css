@@ -1,0 +1,8 @@
+@media only screen and (min-width: 400px) and (max-width: 580px) {
+  li.logo {
+    background-color: #01adff;
+    display: block;
+    width: 50px;
+    height: 50px; } }
+
+/*# sourceMappingURL=landingPage.css.map */
