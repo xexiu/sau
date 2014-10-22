@@ -65,31 +65,164 @@ a:hover {
     font-size: 32px;
     color: #384047;
     font-weight: 500;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      border-bottom: 1px solid #f1f1f1;
-    }
-    article header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f1f1f1;
+  }
+  article header {
     text-align: left;
     margin-left: 145px;
     color: #222;
     font-size: 20px;
     margin-bottom: 5px;
     margin-top: 15px;
-    }
-    article img.img {
+  }
+  article img.img {
+    @include border-radius;
+    float: left;
+    margin-left: 10px;
+    margin-top: -25px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+  }
+  article p {
+    padding-right: 10px;
+  }
+}
+
+.btn-blue {
+  @extend %btn-blue;
+}
+
+@include tablets {
+  #main {
+    width: 100%;
+    section.important, section.recomended {
       @include border-radius;
-      float: left;
+      & h1 {
+        display: block;
+        text-align: center;
+        font-size: 32px;
+        color: white;
+        font-weight: 500;
+        background-color: $phones-h1-bg;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ccc;
+        border-top: 1px solid #ccc;
+      }
+      article header {
+        text-align: left;
+        margin-left: 120px;
+        color: #222;
+        font-size: 20px;
+        margin-bottom: 5px;
+        margin-top: 15px;
+      }
+    }
+    aside.thumbs a {
+      margin-top: 5px;
       margin-left: 10px;
-      margin-top: -25px;
-      margin-right: 10px;
+      float: right;
+      text-decoration: none;
+      font-size: 14px;
+    }
+  }
+}
+
+
+@include phones {
+  #main {
+    width: 100%;
+    padding: 0;
+    @include border-radius;
+    section.important, section.recomended {
+      & h1 {
+        display: block;
+        text-align: center;
+        font-size: 32px;
+        color: white;
+        font-weight: 500;
+        background-color: $phones-h1-bg;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ccc;
+        border-top: 1px solid #ccc;
+      }
+      article header {
+        text-align: left;
+        margin-left: 70px;
+        color: #222;
+        font-size: 20px;
+        margin-bottom: 5px;
+        margin-top: 15px;
+      }
+      aside.thumbs a {
+        margin-top: 5px;
+        margin-left: 10px;
+        float: right;
+        text-decoration: none;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@include tablets {
+  section.important article:nth-child(odd) img.img {
+    float: right;
+    margin-left: 10px;
+  }
+  section.important article:nth-child(even) img.img {
+    float: left;
+    margin-right: 10px;
+  }
+  section.recomended article:nth-child(odd) img.img {
+    float: right;
+    margin-left: 10px;
+  }
+  section.recomended article:nth-child(even) img.img {
+    float: left;
+    margin-right: 10px;
+  }
+  article {
+    margin-top: 15px;
+    padding-right: 5px;
+    padding-left: 15px;
+    text-align: justify;
+    border-bottom: 1px solid #f1f1f1;
+    padding-bottom: 10px;
+    & header {
+      text-align: center;
+      color: #222;
+      font-size: 20px;
       margin-bottom: 5px;
     }
-    article p {
-      padding-right: 10px;
+    img {
+      width: 100px;
+      height: 100px;
     }
   }
-
-  .btn-blue {
-    @extend %btn-blue;
+}
+@include phones {
+  article {
+    margin-top: 15px;
+    padding-right: 5px;
+    padding-left: 15px;
+    text-align: justify;
+    border-bottom: 1px solid #f1f1f1;
+    padding-bottom: 10px;
+    & header {
+      text-align: center;
+      color: #222;
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+    & img {
+      width: 50px;
+      height: 50px;
+      float: left;
+      margin-right: 10px;
+    }
   }
+}

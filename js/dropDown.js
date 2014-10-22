@@ -19,5 +19,4 @@ $(document).ready(function(e){
       $(_self).slideUp();
     }
   }); // Press ESC will also close the drop-down
-
 });
