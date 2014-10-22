@@ -43,13 +43,20 @@ a:hover {
 
 #main {
   padding: 10px;
-  // background-color: white;
+  background-color: black;
   width: 900px;
   margin: 40px auto;
+  aside.menu {
+    width: 200px;
+    background-color: red;
+    float: left;
+  }
   section#important, section#recomended {
     @include border-radius;
     background-color: white;
     margin-bottom: 10px;
+    float: right;
+    width: 75%;
     aside.thumbs a {
       margin-top: 5px;
       margin-left: 10px;
