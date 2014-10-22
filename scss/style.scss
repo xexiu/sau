@@ -57,6 +57,7 @@ a:hover {
       text-decoration: none;
       font-size: 14px;
       padding-right: 10px;
+      margin-bottom: 5px;
     }
   }
   section#important h1, section#recomended h1 {
@@ -88,7 +89,12 @@ a:hover {
     height: 100px;
   }
   article p {
+    display: block;
     padding-right: 10px;
+    margin-bottom: 5px;
+    height: 80px;
+    text-align: justify;
+    overflow: hidden;
   }
 }
 
