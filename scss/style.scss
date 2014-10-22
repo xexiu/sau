@@ -71,7 +71,7 @@ a:hover {
   }
   article header {
     text-align: left;
-    margin-left: 145px;
+    margin-left: 120px;
     color: #222;
     font-size: 20px;
     margin-bottom: 5px;
@@ -84,6 +84,8 @@ a:hover {
     margin-top: -25px;
     margin-right: 10px;
     margin-bottom: 5px;
+    width: 100px;
+    height: 100px;
   }
   article p {
     padding-right: 10px;
@@ -156,6 +158,10 @@ a:hover {
         font-size: 20px;
         margin-bottom: 5px;
         margin-top: 15px;
+      }
+      article img.img {
+        width: 50px;
+        height: 50px;
       }
       aside.thumbs a {
         margin-top: 5px;

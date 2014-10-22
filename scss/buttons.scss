@@ -13,7 +13,7 @@
   text-transform: uppercase;
   font-size: 20px;
   font-weight: bold;
-  color: #1F697F;
+  color: white;
   text-shadow: 0 1px 0 #000;
   box-shadow: 0 4px 0 #21728B, 0 8px 8px rgba(0,0,0,0.6);
   cursor: pointer;
@@ -33,8 +33,6 @@
 
 %btn-blue:hover, %btn-blue:focus {
   text-shadow: 0 1px 0 #000;
-  -webkit-animation: pulsate 1.2s linear infinite;
-  animation: pulsate 1.2s linear infinite;
   outline: 0;
 }
 
@@ -42,11 +40,4 @@
   background-color: $primaryColor;
   background: linear-gradient(#2896B6, $primaryColor);
   box-shadow: 0 2px 0 #21728B, 0 4px 4px rgba(0,0,0,0.6);
-}
-
-@-webkit-keyframes pulsate
-{
-  0%   { color: #ddd; text-shadow: 0 1px 0 #000; }
-  50%  { color: #fff; text-shadow: 0 1px 0 #444, 0 0 5px #ffd, 0 0 8px #fff; }
-  100% { color: #ddd; text-shadow: 0 1px 0 #000; }
 }
