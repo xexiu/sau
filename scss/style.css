@@ -71,21 +71,21 @@ a:hover {
   padding: 10px;
   width: 900px;
   margin: 40px auto; }
-  #main section.important, #main section.recomended {
+  #main section#important, #main section#recomended {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     border-radius: 5px;
     background-color: white;
     margin-bottom: 10px; }
-    #main section.important aside.thumbs a, #main section.recomended aside.thumbs a {
+    #main section#important aside.thumbs a, #main section#recomended aside.thumbs a {
       margin-top: 5px;
       margin-left: 10px;
       float: right;
       text-decoration: none;
       font-size: 14px;
       padding-right: 10px; }
-  #main section.important h1, #main section.recomended h1 {
+  #main section#important h1, #main section#recomended h1 {
     display: block;
     text-align: center;
     font-size: 32px;
@@ -119,12 +119,12 @@ a:hover {
 @media only screen and (min-width: 580px) and (max-width: 940px) {
   #main {
     width: 100%; }
-    #main section.important, #main section.recomended {
+    #main section#important, #main section#recomended {
       -webkit-border-radius: 5px;
       -moz-border-radius: 5px;
       -ms-border-radius: 5px;
       border-radius: 5px; }
-      #main section.important h1, #main section.recomended h1 {
+      #main section#important h1, #main section#recomended h1 {
         display: block;
         text-align: center;
         font-size: 32px;
@@ -135,7 +135,7 @@ a:hover {
         padding-bottom: 10px;
         border-bottom: 1px solid #ccc;
         border-top: 1px solid #ccc; }
-      #main section.important article header, #main section.recomended article header {
+      #main section#important article header, #main section#recomended article header {
         text-align: left;
         margin-left: 120px;
         color: #222;
@@ -156,7 +156,7 @@ a:hover {
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     border-radius: 5px; }
-    #main section.important h1, #main section.recomended h1 {
+    #main section#important h1, #main section#recomended h1 {
       display: block;
       text-align: center;
       font-size: 32px;
@@ -167,36 +167,36 @@ a:hover {
       padding-bottom: 10px;
       border-bottom: 1px solid #ccc;
       border-top: 1px solid #ccc; }
-    #main section.important article header, #main section.recomended article header {
+    #main section#important article header, #main section#recomended article header {
       text-align: left;
       margin-left: 70px;
       color: #222;
       font-size: 20px;
       margin-bottom: 5px;
       margin-top: 15px; }
-    #main section.important article img.img, #main section.recomended article img.img {
+    #main section#important article img.img, #main section#recomended article img.img {
       width: 50px;
       height: 50px; }
-    #main section.important aside.thumbs a, #main section.recomended aside.thumbs a {
+    #main section#important aside.thumbs a, #main section#recomended aside.thumbs a {
       margin-top: 5px;
       margin-left: 10px;
       float: right;
       text-decoration: none;
       font-size: 14px; } }
 @media only screen and (min-width: 580px) and (max-width: 940px) {
-  section.important article:nth-child(odd) img.img {
+  section#important article:nth-child(odd) img.img {
     float: right;
     margin-left: 10px; }
 
-  section.important article:nth-child(even) img.img {
+  section#important article:nth-child(even) img.img {
     float: left;
     margin-right: 10px; }
 
-  section.recomended article:nth-child(odd) img.img {
+  section#recomended article:nth-child(odd) img.img {
     float: right;
     margin-left: 10px; }
 
-  section.recomended article:nth-child(even) img.img {
+  section#recomended article:nth-child(even) img.img {
     float: left;
     margin-right: 10px; }
 

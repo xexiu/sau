@@ -46,7 +46,7 @@ a:hover {
   // background-color: white;
   width: 900px;
   margin: 40px auto;
-  section.important, section.recomended {
+  section#important, section#recomended {
     @include border-radius;
     background-color: white;
     margin-bottom: 10px;
@@ -59,7 +59,7 @@ a:hover {
       padding-right: 10px;
     }
   }
-  section.important h1, section.recomended h1 {
+  section#important h1, section#recomended h1 {
     display: block;
     text-align: center;
     font-size: 32px;
@@ -99,7 +99,7 @@ a:hover {
 @include tablets {
   #main {
     width: 100%;
-    section.important, section.recomended {
+    section#important, section#recomended {
       @include border-radius;
       & h1 {
         display: block;
@@ -138,7 +138,7 @@ a:hover {
     width: 100%;
     padding: 0;
     @include border-radius;
-    section.important, section.recomended {
+    section#important, section#recomended {
       & h1 {
         display: block;
         text-align: center;
@@ -175,19 +175,19 @@ a:hover {
 }
 
 @include tablets {
-  section.important article:nth-child(odd) img.img {
+  section#important article:nth-child(odd) img.img {
     float: right;
     margin-left: 10px;
   }
-  section.important article:nth-child(even) img.img {
+  section#important article:nth-child(even) img.img {
     float: left;
     margin-right: 10px;
   }
-  section.recomended article:nth-child(odd) img.img {
+  section#recomended article:nth-child(odd) img.img {
     float: right;
     margin-left: 10px;
   }
-  section.recomended article:nth-child(even) img.img {
+  section#recomended article:nth-child(even) img.img {
     float: left;
     margin-right: 10px;
   }
