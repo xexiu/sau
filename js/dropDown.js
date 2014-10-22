@@ -1,26 +1,22 @@
 $(document).ready(function(e){
   $('.target').click(function(ev){
-   var _self = $('.dropDown');
+   var self = $('.dropDown');
    ev.stopPropagation();
-   $(_self).toggle(this);
+   $(self).slideToggle(this);
  }); // Hide - Show the drop-down
-
-$('.target').click(function(){
-	$('.dropDown').css({'display', 'block'});
-});
 
 $(".dropDown").click(function(e){
 	e.stopPropagation();
 }); // Stop the bubble to go outside
 
 $(document).click(function(){
-	$('.dropDown').slideUp();
+	$('.dropDown').slideToggle();
 	}); // Close the drop-down when clicking outside of it
 
 $(document).keyup(function(e) {
 	if (e.keyCode === 27) {
-  		var _self = $('.dropDown');
-  			$(_self).slideUp();
+  		var self = $('.dropDown');
+  			$(self).slideToggle();
 }
 }); // Press ESC will also close the drop-down
 
