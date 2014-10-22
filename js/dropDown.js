@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 		$('.target').click(function(){
-			$('.dropDown').css('display', 'block');
+			$('.dropDown').css({'display', 'block'});
 		});
 
 });
