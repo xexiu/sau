@@ -2,7 +2,7 @@ $(document).ready(function(e){
   $('.target').click(function(ev){
    var _self = $('.dropDown');
    ev.stopPropagation();
-   $(_self).slideToggle(this);
+   $(_self).toggle(this);
  }); // Hide - Show the drop-down
 
   $(".dropDown").click(function(e){
