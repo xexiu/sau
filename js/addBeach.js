@@ -2,15 +2,33 @@ var beaches = JSON.parse(data);
 console.log(beaches[0].name);
 
 var main = document.getElementById('main');
-// var section = document.getElementsByTagName('section');
+var aside_menu = document.getElementById('menu_items');
+var aside_menu_nav = document.createElement('nav');
+var aside_menu_nav_ul = document.createElement('ul');
+var aside_menu_nav_ul_li = document.createElement('li');
+aside_menu_nav_ul_li.className = 'active';
+var aside_menu_nav_ul_li_inner = '<a href="#">Browse All</a>';
+aside_menu_nav_ul_li.innerHTML = aside_menu_nav_ul_li_inner;
+aside_menu.appendChild(aside_menu_nav).appendChild(aside_menu_nav_ul).appendChild(aside_menu_nav_ul_li);
+
+// Left Aside Menu Items
+for(i = 0; i < beaches.length; i++){
+  var aside_menu_nav_ul_li = document.createElement('li');
+  var aside_menu_nav_ul_li_inner = '<a href="#">' + beaches[i].name.replace(/\"([^(\")"]+)\":/g,"$1:") + '</a>';
+  aside_menu_nav_ul_li.innerHTML = aside_menu_nav_ul_li_inner;
+  aside_menu.appendChild(aside_menu_nav).appendChild(aside_menu_nav_ul).appendChild(aside_menu_nav_ul_li);
+}
+
+
 var section = document.createElement('section');
 section.id = 'important';
 section.className = 'cf';
 var h1 = document.createElement('h1');
-var h1_content = document.createTextNode("Most voted costs");
+var h1_content = document.createTextNode("10 Most voted costs");
 main.appendChild(section).appendChild(h1).appendChild(h1_content);
 
-for(i = 0; i < 3; i++){
+// Generate content center
+for(i = 0; i <= 10; i++){
   var article = document.createElement('article');
   article.className = 'cf';
   var header = document.createElement('header');
@@ -30,5 +48,4 @@ for(i = 0; i < 3; i++){
   article.appendChild(img_1);
   article.appendChild(p).appendChild(p_content);
   article.appendChild(aside);
-// section.appendChild(article);
 }
