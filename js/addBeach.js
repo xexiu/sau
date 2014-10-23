@@ -17,7 +17,7 @@ for(i = 0; i < beaches.length; i++){
   var aside_menu_nav_ul_li = document.createElement('li');
   aside_menu_nav_ul_li.id = beaches[i].id;
   aside_menu_nav_ul_li.className = 'this_is_a_class';
-  var aside_menu_nav_ul_li_inner = '<a href="#'+beaches[i].name+'">' + beaches[i].name.replace(/\"([^(\")"]+)\":/g,"$1:") + '</a>';
+  var aside_menu_nav_ul_li_inner = '<a href="#'+beaches[i].name+'">' + beaches[i].name.replace(/\"([^(\")"]+)\":/g,"$1:") + '</a>'; // Trim double quotes (no quotes)
   aside_menu_nav_ul_li.innerHTML = aside_menu_nav_ul_li_inner;
   aside_menu.appendChild(aside_menu_nav).appendChild(aside_menu_nav_ul).appendChild(aside_menu_nav_ul_li);
 }
@@ -34,7 +34,7 @@ for(i = 0; i <= 13; i++){
   var a_name = document.createElement('a');
   a_name.name = beaches[i].name;
   var article = document.createElement('article');
-  article.className = 'cf';
+  article.className = 'cf ' + beaches[i].name.replace(/[\s+'']/g, ""); // Replace white spaces and single quotes
   var header = document.createElement('header');
   var h2 = document.createElement('h2');
   var h2_content = document.createTextNode(beaches[i].name);
@@ -152,4 +152,51 @@ $(window).scroll(function(){
     }else{
       $('#14').removeClass('active');
     }
+  });
+
+$("#1").bind("click", function() {
+  $('body').animate({
+    scrollTop: $('.TossadeMar').offset().top
+}, 1000); //scroll to div with container as ID.
+    return false; //Prevent Default and event bubbling.
+  });
+
+$("#2").bind("click", function() {
+  //$('#10').addClass('active');
+  $('body').animate({
+    scrollTop: $('.Begur').offset().top
+}, 1000); //scroll to div with container as ID.
+    return false; //Prevent Default and event bubbling.
+  });
+
+$("#3").bind("click", function() {
+  //$('#10').addClass('active');
+  $('body').animate({
+    scrollTop: $('.Palamós').offset().top
+}, 1000); //scroll to div with container as ID.
+    return false; //Prevent Default and event bubbling.
+  });
+
+$("#4").bind("click", function() {
+  //$('#10').addClass('active');
+  $('body').animate({
+    scrollTop: $('.SantFeliudeGuíxols').offset().top
+}, 1000); //scroll to div with container as ID.
+    return false; //Prevent Default and event bubbling.
+  });
+
+$("#5").bind("click", function() {
+  //$('#10').addClass('active');
+  $('body').animate({
+    scrollTop: $(".L\'escala").offset().top
+}, 1000); //scroll to div with container as ID.
+    return false; //Prevent Default and event bubbling.
+  });
+
+$("#10").bind("click", function() {
+  //$('#10').addClass('active');
+  $('body').animate({
+    scrollTop: $('.Roses').offset().top-200
+}, 1000); //scroll to div with container as ID.
+    return false; //Prevent Default and event bubbling.
   });
