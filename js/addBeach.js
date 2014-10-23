@@ -188,7 +188,7 @@ $("#4").bind("click", function() {
 $("#5").bind("click", function() {
   //$('#10').addClass('active');
   $('body').animate({
-    scrollTop: $(".L\'escala").offset().top
+    scrollTop: $(".Lescala").offset().top
 }, 1000); //scroll to div with container as ID.
     return false; //Prevent Default and event bubbling.
   });
