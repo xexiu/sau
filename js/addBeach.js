@@ -180,7 +180,7 @@ $("#3").bind("click", function() {
 $("#4").bind("click", function() {
   //$('#10').addClass('active');
   $('body').animate({
-    scrollTop: $('.SantFeliudeGuíxols').offset().top
+    scrollTop: $('.SantFeliudeGuíxols').offset().top-50
 }, 1000); //scroll to div with container as ID.
     return false; //Prevent Default and event bubbling.
   });
@@ -188,7 +188,31 @@ $("#4").bind("click", function() {
 $("#5").bind("click", function() {
   //$('#10').addClass('active');
   $('body').animate({
-    scrollTop: $(".Lescala").offset().top
+    scrollTop: $(".Lescala").offset().top-50
+}, 1000); //scroll to div with container as ID.
+    return false; //Prevent Default and event bubbling.
+  });
+
+$("#6").bind("click", function() {
+  //$('#10').addClass('active');
+  $('body').animate({
+    scrollTop: $(".Llafranc").offset().top-100
+}, 1000); //scroll to div with container as ID.
+    return false; //Prevent Default and event bubbling.
+  });
+
+$("#7").bind("click", function() {
+  //$('#10').addClass('active');
+  $('body').animate({
+    scrollTop: $(".LEstartit").offset().top-120
+}, 1000); //scroll to div with container as ID.
+    return false; //Prevent Default and event bubbling.
+  });
+
+$("#8").bind("click", function() {
+  //$('#10').addClass('active');
+  $('body').animate({
+    scrollTop: $(".Llancà").offset().top-120
 }, 1000); //scroll to div with container as ID.
     return false; //Prevent Default and event bubbling.
   });
