@@ -14,6 +14,8 @@ aside_menu.appendChild(aside_menu_nav).appendChild(aside_menu_nav_ul).appendChil
 // Left Aside Menu Items
 for(i = 0; i < beaches.length; i++){
   var aside_menu_nav_ul_li = document.createElement('li');
+  aside_menu_nav_ul_li.id = beaches[i].id;
+  aside_menu_nav_ul_li.className = 'tile';
   var aside_menu_nav_ul_li_inner = '<a href="#">' + beaches[i].name.replace(/\"([^(\")"]+)\":/g,"$1:") + '</a>';
   aside_menu_nav_ul_li.innerHTML = aside_menu_nav_ul_li_inner;
   aside_menu.appendChild(aside_menu_nav).appendChild(aside_menu_nav_ul).appendChild(aside_menu_nav_ul_li);
@@ -27,7 +29,7 @@ var h1_content = document.createTextNode("10 Most voted costs");
 main.appendChild(section).appendChild(h1).appendChild(h1_content);
 
 // Generate content center
-for(i = 0; i <= 3; i++){
+for(i = 0; i <= 5; i++){
   var article = document.createElement('article');
   article.className = 'cf';
   var header = document.createElement('header');
