@@ -19,7 +19,6 @@ for(i = 0; i < beaches.length; i++){
   aside_menu.appendChild(aside_menu_nav).appendChild(aside_menu_nav_ul).appendChild(aside_menu_nav_ul_li);
 }
 
-
 var section = document.createElement('section');
 section.id = 'important';
 section.className = 'cf';
@@ -28,7 +27,7 @@ var h1_content = document.createTextNode("10 Most voted costs");
 main.appendChild(section).appendChild(h1).appendChild(h1_content);
 
 // Generate content center
-for(i = 0; i <= 10; i++){
+for(i = 0; i <= 3; i++){
   var article = document.createElement('article');
   article.className = 'cf';
   var header = document.createElement('header');
