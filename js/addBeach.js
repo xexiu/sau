@@ -16,8 +16,8 @@ aside_menu.appendChild(aside_menu_nav).appendChild(aside_menu_nav_ul).appendChil
 for(i = 0; i < beaches.length; i++){
   var aside_menu_nav_ul_li = document.createElement('li');
   aside_menu_nav_ul_li.id = beaches[i].id;
-  aside_menu_nav_ul_li.className = 'tile';
-  var aside_menu_nav_ul_li_inner = '<a href="#">' + beaches[i].name.replace(/\"([^(\")"]+)\":/g,"$1:") + '</a>';
+  aside_menu_nav_ul_li.className = 'this_is_a_class';
+  var aside_menu_nav_ul_li_inner = '<a href="#'+beaches[i].name+'">' + beaches[i].name.replace(/\"([^(\")"]+)\":/g,"$1:") + '</a>';
   aside_menu_nav_ul_li.innerHTML = aside_menu_nav_ul_li_inner;
   aside_menu.appendChild(aside_menu_nav).appendChild(aside_menu_nav_ul).appendChild(aside_menu_nav_ul_li);
 }
@@ -31,6 +31,8 @@ main.appendChild(section).appendChild(h1).appendChild(h1_content);
 
 // Generate content center
 for(i = 0; i <= 13; i++){
+  var a_name = document.createElement('a');
+  a_name.name = beaches[i].name;
   var article = document.createElement('article');
   article.className = 'cf';
   var header = document.createElement('header');
@@ -46,6 +48,7 @@ for(i = 0; i <= 13; i++){
   aside.innerHTML = aside_content;
   aside.className = 'thumbs';
   main.appendChild(section).appendChild(article);
+  article.appendChild(a_name);
   article.appendChild(header).appendChild(h2).appendChild(h2_content);
   article.appendChild(img_1);
   article.appendChild(p).appendChild(p_content);
