@@ -217,10 +217,50 @@ $("#8").bind("click", function() {
     return false; //Prevent Default and event bubbling.
   });
 
+$("#9").bind("click", function() {
+  //$('#10').addClass('active');
+  $('body').animate({
+    scrollTop: $(".PlatjadAro").offset().top-140
+}, 1000); //scroll to div with container as ID.
+    return false; //Prevent Default and event bubbling.
+  });
+
 $("#10").bind("click", function() {
   //$('#10').addClass('active');
   $('body').animate({
     scrollTop: $('.Roses').offset().top-200
+}, 1000); //scroll to div with container as ID.
+    return false; //Prevent Default and event bubbling.
+  });
+
+$("#11").bind("click", function() {
+  //$('#10').addClass('active');
+  $('body').animate({
+    scrollTop: $('.LloretdeMar').offset().top-220
+}, 1000); //scroll to div with container as ID.
+    return false; //Prevent Default and event bubbling.
+  });
+
+$("#12").bind("click", function() {
+  //$('#10').addClass('active');
+  $('body').animate({
+    scrollTop: $('.Tamariu').offset().top-240
+}, 1000); //scroll to div with container as ID.
+    return false; //Prevent Default and event bubbling.
+  });
+
+$("#13").bind("click", function() {
+  //$('#10').addClass('active');
+  $('body').animate({
+    scrollTop: $('.Empuriabrava').offset().top-260
+}, 1000); //scroll to div with container as ID.
+    return false; //Prevent Default and event bubbling.
+  });
+
+$("#14").bind("click", function() {
+  //$('#10').addClass('active');
+  $('body').animate({
+    scrollTop: $('.Portbou').offset().top-260
 }, 1000); //scroll to div with container as ID.
     return false; //Prevent Default and event bubbling.
   });
