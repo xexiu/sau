@@ -112,6 +112,7 @@ a:hover {
     margin-bottom: 10px;
     float: right;
     width: 75%;
+    margin-bottom: 250px;
     aside.thumbs a {
       margin-top: 5px;
       margin-left: 10px;
@@ -131,6 +132,9 @@ a:hover {
     padding-top: 10px;
     padding-bottom: 10px;
     border-bottom: 1px solid #f1f1f1;
+  }
+  article {
+    border-bottom: 2px dotted #f1f1f1;
   }
   article header {
     text-align: left;

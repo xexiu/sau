@@ -17,7 +17,6 @@
         <li class="location">You are here</li>
         <li class="first"><a href="#" style="z-index:9;"><span></span>Home</a></li>
         <li><a href="#" style="z-index:8;">Browse All</a></li>
-        <li><a href="#" style="z-index:7;">Most Voted</a></li>
       </ul>
     </div>
     <aside id="menu_items">
@@ -118,25 +117,5 @@
   <script src="beaches.JSON"></script>
   <script src="js/jquery-1.11.1.min.js"></script>
   <script src="js/addBeach.js"></script>
-  <script>
-  $(window).scroll(function(){
-    $("#menu_items").css({
-      "top": Math.max(0,50-$(this).scrollTop()),
-      "position": "fixed"
-    }
-    );
-  });
-
-  $(window).scroll(function (event) {
-    var scroll = $(window).scrollTop();
-    var pageY = pageYOffset;
-    console.log(pageY)
-    if (pageY > 105) {
-      $('#1').addClass('active');
-    }else if (pageY === 205) {
-      $('#1').removeClass('active');
-    }
-  });
-</script>
 </body>
 </html>
