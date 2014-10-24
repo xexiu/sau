@@ -29,25 +29,29 @@ $(document).ready(function() {
       //=========================================================================================================
       var a_name = document.createElement('a');
       a_name.name = beaches[i].name;
+      var aImg = document.createElement('a');
+      aImg.href = beaches[i].name.replace(/[\s+'']/g, "").toLowerCase()+'.html';
       var article = document.createElement('article');
       article.className = 'cf ' + beaches[i].name.replace(/[\s+'']/g, ""); // Replace white spaces and single quotes
       var header = document.createElement('header');
       var h2 = document.createElement('h2');
-      var h2_content = document.createTextNode(beaches[i].name);
+      var h2_content = '<a href="'+beaches[i].name.replace(/[\s+'']/g, "").toLowerCase()+'.html">' + beaches[i].name + '</a>';
+      h2.innerHTML = h2_content;
       var img_1 = document.createElement('img');
       img_1.className = 'img';
       img_1.src = beaches[i].img;
       var p = document.createElement('p');
-      var p_content = document.createTextNode(beaches[i].description);
+      var p_content = '<a href="'+beaches[i].name.replace(/[\s+'']/g, "").toLowerCase()+'.html">' + beaches[i].description + '</a>';
+      p.innerHTML = p_content;
       var aside = document.createElement('aside');
       var aside_content = '<a href="">Vote Down</a><a href="">Vote Up</a>';
       aside.innerHTML = aside_content;
       aside.className = 'thumbs';
       main.appendChild(section).appendChild(article);
       article.appendChild(a_name);
-      article.appendChild(header).appendChild(h2).appendChild(h2_content);
-      article.appendChild(img_1);
-      article.appendChild(p).appendChild(p_content);
+      article.appendChild(header).appendChild(h2);
+      article.appendChild(aImg).appendChild(img_1);
+      article.appendChild(p);
       article.appendChild(aside);
     }
   }
@@ -218,7 +222,7 @@ $("#tag_8").bind("click", function() {
 $("#tag_9").bind("click", function() {
   //$('#10').addClass('active');
   $('body').animate({
-    scrollTop: $('.PlatjadAro').offset().top-200
+    scrollTop: $(".PlatjadAro").offset().top-140
 }, 1000); //scroll to div with container as ID.
     return false; //Prevent Default and event bubbling.
   });
@@ -231,36 +235,35 @@ $("#tag_10").bind("click", function() {
     return false; //Prevent Default and event bubbling.
   });
 
-$("#tag_9").bind("click", function() {
+$("#tag_11").bind("click", function() {
   //$('#10').addClass('active');
   $('body').animate({
-    scrollTop: $('.Roses').offset().top-200
+    scrollTop: $('.LloretdeMar').offset().top-220
 }, 1000); //scroll to div with container as ID.
     return false; //Prevent Default and event bubbling.
   });
 
-$("#tag_9").bind("click", function() {
+$("#tag_12").bind("click", function() {
   //$('#10').addClass('active');
   $('body').animate({
-    scrollTop: $('.Roses').offset().top-200
+    scrollTop: $('.Tamariu').offset().top-240
 }, 1000); //scroll to div with container as ID.
     return false; //Prevent Default and event bubbling.
   });
 
-$("#tag_9").bind("click", function() {
+$("#tag_13").bind("click", function() {
   //$('#10').addClass('active');
   $('body').animate({
-    scrollTop: $('.Roses').offset().top-200
+    scrollTop: $('.Empuriabrava').offset().top-260
 }, 1000); //scroll to div with container as ID.
     return false; //Prevent Default and event bubbling.
   });
 
-$("#tag_9").bind("click", function() {
+$("#tag_14").bind("click", function() {
   //$('#10').addClass('active');
   $('body').animate({
-    scrollTop: $('.Roses').offset().top-200
+    scrollTop: $('.Portbou').offset().top-260
 }, 1000); //scroll to div with container as ID.
     return false; //Prevent Default and event bubbling.
   });
-
 });

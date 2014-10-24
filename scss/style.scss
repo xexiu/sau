@@ -12,7 +12,7 @@
 
 body {
   background-color: $mainColorBg;
-  color: #8c989e;
+  color: $bodyColor;
   font-size: 16px;
   font-style: normal;
   line-height: 1;
@@ -140,6 +140,9 @@ a:hover {
   }
   article {
     border-bottom: 2px dotted #f1f1f1;
+    &:hover {
+      border: 1px solid #f1f1f1;
+    }
   }
   article header {
     text-align: left;
@@ -148,6 +151,12 @@ a:hover {
     font-size: 20px;
     margin-bottom: 5px;
     margin-top: 15px;
+  }
+  article header h2 a {
+    color: #384047;
+  }
+  article p a {
+    color: $bodyColor;
   }
   article img.img-center {
     @include border-radius;

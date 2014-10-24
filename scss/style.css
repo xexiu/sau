@@ -213,6 +213,8 @@ a:hover {
     border-bottom: 1px solid #f1f1f1; }
   #main article {
     border-bottom: 2px dotted #f1f1f1; }
+    #main article:hover {
+      border: 1px solid #f1f1f1; }
   #main article header {
     text-align: left;
     margin-left: 120px;
@@ -220,6 +222,10 @@ a:hover {
     font-size: 20px;
     margin-bottom: 5px;
     margin-top: 15px; }
+  #main article header h2 a {
+    color: #384047; }
+  #main article p a {
+    color: #8c989e; }
   #main article img.img-center {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
