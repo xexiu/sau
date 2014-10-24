@@ -144,6 +144,14 @@ a:hover {
     margin-bottom: 5px;
     margin-top: 15px;
   }
+  article img.img-center {
+    @include border-radius;
+    margin-left: 12%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 500px;
+    height: 500px;
+  }
   article img.img {
     @include border-radius;
     float: left;
@@ -157,6 +165,7 @@ a:hover {
   article p {
     display: block;
     padding-right: 10px;
+    padding-left: 10px;
     margin-bottom: 5px;
     height: 85px;
     text-align: justify;
@@ -198,6 +207,9 @@ a:hover {
         font-size: 20px;
         margin-bottom: 5px;
         margin-top: 15px;
+      }
+      article p {
+        padding-left: 0px;
       }
     }
     aside.thumbs a {
@@ -244,6 +256,9 @@ a:hover {
         font-size: 20px;
         margin-bottom: 5px;
         margin-top: 15px;
+      }
+      article p {
+        padding-left: 0px;
       }
       article img.img {
         width: 50px;
