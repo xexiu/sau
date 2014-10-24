@@ -21,7 +21,7 @@ $(document).ready(function() {
     for(i = 0; i < beaches.length; i++){
       // Left Aside Menu Items
       var aside_menu_nav_ul_li = document.createElement('li');
-      aside_menu_nav_ul_li.id = 'id_'+beaches[i].name.replace(/[\s+'']/g, "");
+      aside_menu_nav_ul_li.id = 'tag_'+beaches[i].id;
       aside_menu_nav_ul_li.className = 'menu_item';
       var aside_menu_nav_ul_li_inner = '<a href="#'+beaches[i].name+'">' + beaches[i].name + '</a>'; // Trim double quotes (no quotes)
       aside_menu_nav_ul_li.innerHTML = aside_menu_nav_ul_li_inner;
@@ -62,224 +62,94 @@ $(document).ready(function() {
     );
   });
 
-  $('article[class^="class_"]').each(function () {
-    var _class = this.className.replace("class_", "");
-    var article = $(".class_" + _class);
-    var article2 = $(article).attr('class_');
-    $('#tag_1').click(function(){
-      console.log(article2);
-    })
-  })
-
 // Left side SPY when scrolling
 $(window).scroll(function(){
   var pageY = pageYOffset;
-  //console.log(pageY)
+//console.log(pageY)
+if (pageY > 102 && pageY < 207 ) {
+  // $('#0').removeClass('active');
+  $('#tag_1').addClass('active');
+}else{
+  $('#tag_1').removeClass('active');
+}
 
-  $('li[id^="id_"]').each(function () {
-    var id = parseInt(this.id.replace("id_", ""));
-    var li = $("#id_" + id);
-    $(li).click(function(){
-      console.log('hi');
-    })
-  });
+if (pageY > 207 && pageY < 335) {
+  $('#tag_2').addClass('active');
+}else{
+  $('#tag_2').removeClass('active');
+}
 
-  if (pageY > 102 && pageY < 207 ) {
-    // $('#0').removeClass('active');
-    // console.log('hi');
-  }else{
-    $('#1').removeClass('active');
-  }
+if (pageY > 335 && pageY < 465) {
+  $('#tag_3').addClass('active');
+}else{
+  $('#tag_3').removeClass('active');
+}
 
-  if (pageY > 207 && pageY < 335) {
-    $('#2').addClass('active');
-  }else{
-    $('#2').removeClass('active');
-  }
+if (pageY > 465 && pageY < 595) {
+  $('#tag_4').addClass('active');
+}else{
+  $('#tag_4').removeClass('active');
+}
 
-  if (pageY > 335 && pageY < 465) {
-    $('#3').addClass('active');
-  }else{
-    $('#3').removeClass('active');
-  }
+if (pageY > 595 && pageY < 725) {
+  $('#tag_5').addClass('active');
+}else{
+  $('#tag_5').removeClass('active');
+}
 
-  if (pageY > 465 && pageY < 595) {
-    $('#4').addClass('active');
-  }else{
-    $('#4').removeClass('active');
-  }
+if (pageY > 725 && pageY < 855) {
+  $('#tag_6').addClass('active');
+}else{
+  $('#tag_6').removeClass('active');
+}
 
-  if (pageY > 595 && pageY < 725) {
-    $('#5').addClass('active');
-  }else{
-    $('#5').removeClass('active');
-  }
+if (pageY > 855 && pageY < 985) {
+  $('#tag_7').addClass('active');
+}else{
+  $('#tag_7').removeClass('active');
+}
 
-  if (pageY > 725 && pageY < 855) {
-    $('#6').addClass('active');
-  }else{
-    $('#6').removeClass('active');
-  }
+if (pageY > 985 && pageY < 1115) {
+  $('#tag_8').addClass('active');
+}else{
+  $('#tag_8').removeClass('active');
+}
 
-  if (pageY > 855 && pageY < 985) {
-    $('#7').addClass('active');
-  }else{
-    $('#7').removeClass('active');
-  }
+if (pageY > 1115 && pageY < 1245) {
+  $('#tag_9').addClass('active');
+}else{
+  $('#tag_9').removeClass('active');
+}
 
-  if (pageY > 985 && pageY < 1115) {
-    $('#8').addClass('active');
-  }else{
-    $('#8').removeClass('active');
-  }
+if (pageY > 1245 && pageY < 1375) {
+  $('#tag_10').addClass('active');
+}else{
+  $('#tag_10').removeClass('active');
+}
 
-  if (pageY > 1115 && pageY < 1245) {
-    $('#9').addClass('active');
-  }else{
-    $('#9').removeClass('active');
-  }
+if (pageY > 1375 && pageY < 1505) {
+  $('#tag_11').addClass('active');
+}else{
+  $('#tag_11').removeClass('active');
+}
 
-  if (pageY > 1245 && pageY < 1375) {
-    $('#10').addClass('active');
-  }else{
-    $('#10').removeClass('active');
-  }
+if (pageY > 1505 && pageY < 1635) {
+  $('#tag_12').addClass('active');
+}else{
+  $('#tag_12').removeClass('active');
+}
 
-  if (pageY > 1375 && pageY < 1505) {
-    $('#11').addClass('active');
-  }else{
-    $('#11').removeClass('active');
-  }
+if (pageY > 1635 && pageY < 1765) {
+  $('#tag_13').addClass('active');
+}else{
+  $('#tag_13').removeClass('active');
+}
 
-  if (pageY > 1505 && pageY < 1635) {
-    $('#12').addClass('active');
-  }else{
-    $('#12').removeClass('active');
-  }
-
-  if (pageY > 1635 && pageY < 1765) {
-    $('#13').addClass('active');
-  }else{
-    $('#13').removeClass('active');
-  }
-
-  if (pageY > 1765 && pageY < 1895) {
-    $('#14').addClass('active');
-  }else{
-    $('#14').removeClass('active');
-  }
-});
-
-$("id_"+beaches[0].name).bind("click", function() {
-  console.log('hi');
-  $('body').animate({
-    scrollTop: $('.TossadeMar').offset().top
-  }, 1000); //scroll to div with container as ID.
-return false; //Prevent Default and event bubbling.
-});
-
-$("#2").bind("click", function() {
-  //$('#10').addClass('active');
-  $('body').animate({
-    scrollTop: $('.Begur').offset().top
-  }, 1000); //scroll to div with container as ID.
-return false; //Prevent Default and event bubbling.
-});
-
-$("#3").bind("click", function() {
-  //$('#10').addClass('active');
-  $('body').animate({
-    scrollTop: $('.Palamós').offset().top
-  }, 1000); //scroll to div with container as ID.
-return false; //Prevent Default and event bubbling.
-});
-
-$("#4").bind("click", function() {
-  //$('#10').addClass('active');
-  $('body').animate({
-    scrollTop: $('.SantFeliudeGuíxols').offset().top-50
-  }, 1000); //scroll to div with container as ID.
-return false; //Prevent Default and event bubbling.
-});
-
-$("#5").bind("click", function() {
-  //$('#10').addClass('active');
-  $('body').animate({
-    scrollTop: $(".Lescala").offset().top-50
-  }, 1000); //scroll to div with container as ID.
-return false; //Prevent Default and event bubbling.
-});
-
-$("#6").bind("click", function() {
-  //$('#10').addClass('active');
-  $('body').animate({
-    scrollTop: $(".Llafranc").offset().top-100
-  }, 1000); //scroll to div with container as ID.
-return false; //Prevent Default and event bubbling.
-});
-
-$("#7").bind("click", function() {
-  //$('#10').addClass('active');
-  $('body').animate({
-    scrollTop: $(".LEstartit").offset().top-120
-  }, 1000); //scroll to div with container as ID.
-return false; //Prevent Default and event bubbling.
-});
-
-$("#8").bind("click", function() {
-  //$('#10').addClass('active');
-  $('body').animate({
-    scrollTop: $(".Llancà").offset().top-120
-  }, 1000); //scroll to div with container as ID.
-return false; //Prevent Default and event bubbling.
-});
-
-$("#9").bind("click", function() {
-  //$('#10').addClass('active');
-  $('body').animate({
-    scrollTop: $(".PlatjadAro").offset().top-140
-  }, 1000); //scroll to div with container as ID.
-return false; //Prevent Default and event bubbling.
-});
-
-$("#10").bind("click", function() {
-  //$('#10').addClass('active');
-  $('body').animate({
-    scrollTop: $('.Roses').offset().top-200
-  }, 1000); //scroll to div with container as ID.
-return false; //Prevent Default and event bubbling.
-});
-
-$("#11").bind("click", function() {
-  //$('#10').addClass('active');
-  $('body').animate({
-    scrollTop: $('.LloretdeMar').offset().top-220
-  }, 1000); //scroll to div with container as ID.
-return false; //Prevent Default and event bubbling.
-});
-
-$("#12").bind("click", function() {
-  //$('#10').addClass('active');
-  $('body').animate({
-    scrollTop: $('.Tamariu').offset().top-240
-  }, 1000); //scroll to div with container as ID.
-return false; //Prevent Default and event bubbling.
-});
-
-$("#13").bind("click", function() {
-  //$('#10').addClass('active');
-  $('body').animate({
-    scrollTop: $('.Empuriabrava').offset().top-260
-  }, 1000); //scroll to div with container as ID.
-return false; //Prevent Default and event bubbling.
-});
-
-$("#14").bind("click", function() {
-  //$('#10').addClass('active');
-  $('body').animate({
-    scrollTop: $('.Portbou').offset().top-260
-  }, 1000); //scroll to div with container as ID.
-return false; //Prevent Default and event bubbling.
+if (pageY > 1765 && pageY < 1895) {
+  $('#tag_14').addClass('active');
+}else{
+  $('#tag_14').removeClass('active');
+}
 });
 
 });
