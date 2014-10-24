@@ -58,6 +58,11 @@ a:hover {
 .crumbs li.first a span { height: 29px; width: 3px; border-left: 1px solid #d9d9d9; position: absolute; top: 0px; left: 0px;
 }
 
+.active-link {
+  color: #333 !important;
+  background-position: 100% -96px !important;
+}
+
 #main {
   position: relative;
   padding: 10px;
