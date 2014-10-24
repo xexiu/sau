@@ -1,6 +1,6 @@
 $(document).ready(function() {
   var beaches = JSON.parse(data);
-  console.log(beaches[0].name);
+  //console.log(beaches[0].name);
 
   // Add active status for links on breadcrumb depending on which page you are!!
   var url = window.location.pathname;
@@ -62,13 +62,31 @@ $(document).ready(function() {
     );
   });
 
+  $('article[class^="class_"]').each(function () {
+    var _class = this.className.replace("class_", "");
+    var article = $(".class_" + _class);
+    var article2 = $(article).attr('class_');
+    $('#tag_1').click(function(){
+      console.log(article2);
+    })
+  })
+
 // Left side SPY when scrolling
 $(window).scroll(function(){
   var pageY = pageYOffset;
-  console.log(pageY)
+  //console.log(pageY)
+
+  $('li[id^="id_"]').each(function () {
+    var id = parseInt(this.id.replace("id_", ""));
+    var li = $("#id_" + id);
+    $(li).click(function(){
+      console.log('hi');
+    })
+  });
+
   if (pageY > 102 && pageY < 207 ) {
     // $('#0').removeClass('active');
-    $("id_"+beaches[0].name).addClass('active');
+    // console.log('hi');
   }else{
     $('#1').removeClass('active');
   }
