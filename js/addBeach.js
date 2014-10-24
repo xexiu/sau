@@ -5,12 +5,9 @@ var main = document.getElementById('main');
 var aside_menu = document.getElementById('menu_items');
 var aside_menu_nav = document.createElement('nav');
 var aside_menu_nav_ul = document.createElement('ul');
-var aside_menu_nav_ul_li = document.createElement('li');
-aside_menu_nav_ul_li.className = '';
-aside_menu_nav_ul_li.id = '0';
 //var aside_menu_nav_ul_li_inner = '<a href="#">Browse All</a>';
 //aside_menu_nav_ul_li.innerHTML = aside_menu_nav_ul_li_inner;
-aside_menu.appendChild(aside_menu_nav).appendChild(aside_menu_nav_ul).appendChild(aside_menu_nav_ul_li);
+aside_menu.appendChild(aside_menu_nav).appendChild(aside_menu_nav_ul);
 
 // Left Aside Menu Items
 for(i = 0; i < beaches.length; i++){
@@ -154,113 +151,113 @@ $(window).scroll(function(){
     }
   });
 
-// $("#1").bind("click", function() {
-//   $('body').animate({
-//     scrollTop: $('.TossadeMar').offset().top
-// }, 1000); //scroll to div with container as ID.
-//     return false; //Prevent Default and event bubbling.
-//   });
+$("#1").bind("click", function() {
+  $('body').animate({
+    scrollTop: $('.TossadeMar').offset().top
+}, 1000); //scroll to div with container as ID.
+    return false; //Prevent Default and event bubbling.
+  });
 
-// $("#2").bind("click", function() {
-//   //$('#10').addClass('active');
-//   $('body').animate({
-//     scrollTop: $('.Begur').offset().top
-// }, 1000); //scroll to div with container as ID.
-//     return false; //Prevent Default and event bubbling.
-//   });
+$("#2").bind("click", function() {
+  //$('#10').addClass('active');
+  $('body').animate({
+    scrollTop: $('.Begur').offset().top
+}, 1000); //scroll to div with container as ID.
+    return false; //Prevent Default and event bubbling.
+  });
 
-// $("#3").bind("click", function() {
-//   //$('#10').addClass('active');
-//   $('body').animate({
-//     scrollTop: $('.Palamós').offset().top
-// }, 1000); //scroll to div with container as ID.
-//     return false; //Prevent Default and event bubbling.
-//   });
+$("#3").bind("click", function() {
+  //$('#10').addClass('active');
+  $('body').animate({
+    scrollTop: $('.Palamós').offset().top
+}, 1000); //scroll to div with container as ID.
+    return false; //Prevent Default and event bubbling.
+  });
 
-// $("#4").bind("click", function() {
-//   //$('#10').addClass('active');
-//   $('body').animate({
-//     scrollTop: $('.SantFeliudeGuíxols').offset().top-50
-// }, 1000); //scroll to div with container as ID.
-//     return false; //Prevent Default and event bubbling.
-//   });
+$("#4").bind("click", function() {
+  //$('#10').addClass('active');
+  $('body').animate({
+    scrollTop: $('.SantFeliudeGuíxols').offset().top-50
+}, 1000); //scroll to div with container as ID.
+    return false; //Prevent Default and event bubbling.
+  });
 
-// $("#5").bind("click", function() {
-//   //$('#10').addClass('active');
-//   $('body').animate({
-//     scrollTop: $(".Lescala").offset().top-50
-// }, 1000); //scroll to div with container as ID.
-//     return false; //Prevent Default and event bubbling.
-//   });
+$("#5").bind("click", function() {
+  //$('#10').addClass('active');
+  $('body').animate({
+    scrollTop: $(".Lescala").offset().top-50
+}, 1000); //scroll to div with container as ID.
+    return false; //Prevent Default and event bubbling.
+  });
 
-// $("#6").bind("click", function() {
-//   //$('#10').addClass('active');
-//   $('body').animate({
-//     scrollTop: $(".Llafranc").offset().top-100
-// }, 1000); //scroll to div with container as ID.
-//     return false; //Prevent Default and event bubbling.
-//   });
+$("#6").bind("click", function() {
+  //$('#10').addClass('active');
+  $('body').animate({
+    scrollTop: $(".Llafranc").offset().top-100
+}, 1000); //scroll to div with container as ID.
+    return false; //Prevent Default and event bubbling.
+  });
 
-// $("#7").bind("click", function() {
-//   //$('#10').addClass('active');
-//   $('body').animate({
-//     scrollTop: $(".LEstartit").offset().top-120
-// }, 1000); //scroll to div with container as ID.
-//     return false; //Prevent Default and event bubbling.
-//   });
+$("#7").bind("click", function() {
+  //$('#10').addClass('active');
+  $('body').animate({
+    scrollTop: $(".LEstartit").offset().top-120
+}, 1000); //scroll to div with container as ID.
+    return false; //Prevent Default and event bubbling.
+  });
 
-// $("#8").bind("click", function() {
-//   //$('#10').addClass('active');
-//   $('body').animate({
-//     scrollTop: $(".Llancà").offset().top-120
-// }, 1000); //scroll to div with container as ID.
-//     return false; //Prevent Default and event bubbling.
-//   });
+$("#8").bind("click", function() {
+  //$('#10').addClass('active');
+  $('body').animate({
+    scrollTop: $(".Llancà").offset().top-120
+}, 1000); //scroll to div with container as ID.
+    return false; //Prevent Default and event bubbling.
+  });
 
-// $("#9").bind("click", function() {
-//   //$('#10').addClass('active');
-//   $('body').animate({
-//     scrollTop: $(".PlatjadAro").offset().top-140
-// }, 1000); //scroll to div with container as ID.
-//     return false; //Prevent Default and event bubbling.
-//   });
+$("#9").bind("click", function() {
+  //$('#10').addClass('active');
+  $('body').animate({
+    scrollTop: $(".PlatjadAro").offset().top-140
+}, 1000); //scroll to div with container as ID.
+    return false; //Prevent Default and event bubbling.
+  });
 
-// $("#10").bind("click", function() {
-//   //$('#10').addClass('active');
-//   $('body').animate({
-//     scrollTop: $('.Roses').offset().top-200
-// }, 1000); //scroll to div with container as ID.
-//     return false; //Prevent Default and event bubbling.
-//   });
+$("#10").bind("click", function() {
+  //$('#10').addClass('active');
+  $('body').animate({
+    scrollTop: $('.Roses').offset().top-200
+}, 1000); //scroll to div with container as ID.
+    return false; //Prevent Default and event bubbling.
+  });
 
-// $("#11").bind("click", function() {
-//   //$('#10').addClass('active');
-//   $('body').animate({
-//     scrollTop: $('.LloretdeMar').offset().top-220
-// }, 1000); //scroll to div with container as ID.
-//     return false; //Prevent Default and event bubbling.
-//   });
+$("#11").bind("click", function() {
+  //$('#10').addClass('active');
+  $('body').animate({
+    scrollTop: $('.LloretdeMar').offset().top-220
+}, 1000); //scroll to div with container as ID.
+    return false; //Prevent Default and event bubbling.
+  });
 
-// $("#12").bind("click", function() {
-//   //$('#10').addClass('active');
-//   $('body').animate({
-//     scrollTop: $('.Tamariu').offset().top-240
-// }, 1000); //scroll to div with container as ID.
-//     return false; //Prevent Default and event bubbling.
-//   });
+$("#12").bind("click", function() {
+  //$('#10').addClass('active');
+  $('body').animate({
+    scrollTop: $('.Tamariu').offset().top-240
+}, 1000); //scroll to div with container as ID.
+    return false; //Prevent Default and event bubbling.
+  });
 
-// $("#13").bind("click", function() {
-//   //$('#10').addClass('active');
-//   $('body').animate({
-//     scrollTop: $('.Empuriabrava').offset().top-260
-// }, 1000); //scroll to div with container as ID.
-//     return false; //Prevent Default and event bubbling.
-//   });
+$("#13").bind("click", function() {
+  //$('#10').addClass('active');
+  $('body').animate({
+    scrollTop: $('.Empuriabrava').offset().top-260
+}, 1000); //scroll to div with container as ID.
+    return false; //Prevent Default and event bubbling.
+  });
 
-// $("#14").bind("click", function() {
-//   //$('#10').addClass('active');
-//   $('body').animate({
-//     scrollTop: $('.Portbou').offset().top-260
-// }, 1000); //scroll to div with container as ID.
-//     return false; //Prevent Default and event bubbling.
-//   });
+$("#14").bind("click", function() {
+  //$('#10').addClass('active');
+  $('body').animate({
+    scrollTop: $('.Portbou').offset().top-260
+}, 1000); //scroll to div with container as ID.
+    return false; //Prevent Default and event bubbling.
+  });
