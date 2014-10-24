@@ -152,4 +152,115 @@ if (pageY > 1765 && pageY < 1895) {
 }
 });
 
+$("#tag_1").bind("click", function() {
+  $('body').animate({
+    scrollTop: $('.TossadeMar').offset().top
+}, 1000); //scroll to div with container as ID.
+    return false; //Prevent Default and event bubbling.
+  });
+
+$("#tag_2").bind("click", function() {
+  //$('#10').addClass('active');
+  $('body').animate({
+    scrollTop: $('.Begur').offset().top
+}, 1000); //scroll to div with container as ID.
+    return false; //Prevent Default and event bubbling.
+  });
+
+$("#tag_3").bind("click", function() {
+  //$('#10').addClass('active');
+  $('body').animate({
+    scrollTop: $('.Palamós').offset().top
+}, 1000); //scroll to div with container as ID.
+    return false; //Prevent Default and event bubbling.
+  });
+
+$("#tag_4").bind("click", function() {
+  //$('#10').addClass('active');
+  $('body').animate({
+    scrollTop: $('.SantFeliudeGuíxols').offset().top-50
+}, 1000); //scroll to div with container as ID.
+    return false; //Prevent Default and event bubbling.
+  });
+
+$("#tag_5").bind("click", function() {
+  //$('#10').addClass('active');
+  $('body').animate({
+    scrollTop: $(".Lescala").offset().top-50
+}, 1000); //scroll to div with container as ID.
+    return false; //Prevent Default and event bubbling.
+  });
+
+$("#tag_6").bind("click", function() {
+  //$('#10').addClass('active');
+  $('body').animate({
+    scrollTop: $(".Llafranc").offset().top-100
+}, 1000); //scroll to div with container as ID.
+    return false; //Prevent Default and event bubbling.
+  });
+
+$("#tag_7").bind("click", function() {
+  //$('#10').addClass('active');
+  $('body').animate({
+    scrollTop: $(".LEstartit").offset().top-120
+}, 1000); //scroll to div with container as ID.
+    return false; //Prevent Default and event bubbling.
+  });
+
+$("#tag_8").bind("click", function() {
+  //$('#10').addClass('active');
+  $('body').animate({
+    scrollTop: $(".Llancà").offset().top-120
+}, 1000); //scroll to div with container as ID.
+    return false; //Prevent Default and event bubbling.
+  });
+
+$("#tag_9").bind("click", function() {
+  //$('#10').addClass('active');
+  $('body').animate({
+    scrollTop: $('.PlatjadAro').offset().top-200
+}, 1000); //scroll to div with container as ID.
+    return false; //Prevent Default and event bubbling.
+  });
+
+$("#tag_10").bind("click", function() {
+  //$('#10').addClass('active');
+  $('body').animate({
+    scrollTop: $('.Roses').offset().top-200
+}, 1000); //scroll to div with container as ID.
+    return false; //Prevent Default and event bubbling.
+  });
+
+$("#tag_9").bind("click", function() {
+  //$('#10').addClass('active');
+  $('body').animate({
+    scrollTop: $('.Roses').offset().top-200
+}, 1000); //scroll to div with container as ID.
+    return false; //Prevent Default and event bubbling.
+  });
+
+$("#tag_9").bind("click", function() {
+  //$('#10').addClass('active');
+  $('body').animate({
+    scrollTop: $('.Roses').offset().top-200
+}, 1000); //scroll to div with container as ID.
+    return false; //Prevent Default and event bubbling.
+  });
+
+$("#tag_9").bind("click", function() {
+  //$('#10').addClass('active');
+  $('body').animate({
+    scrollTop: $('.Roses').offset().top-200
+}, 1000); //scroll to div with container as ID.
+    return false; //Prevent Default and event bubbling.
+  });
+
+$("#tag_9").bind("click", function() {
+  //$('#10').addClass('active');
+  $('body').animate({
+    scrollTop: $('.Roses').offset().top-200
+}, 1000); //scroll to div with container as ID.
+    return false; //Prevent Default and event bubbling.
+  });
+
 });
