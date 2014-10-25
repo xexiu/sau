@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  var beaches = JSON.parse(data);
 // Fixed position Left Menu when scrolling
 $(window).scroll(function(){
   $("#menu_items").css({
@@ -8,34 +9,49 @@ $(window).scroll(function(){
   );
 });
 
+$('article[class^="cf "]').each(function(item){
+  var a = $(item);
+  console.log(a.height());
+});
+var item = $('.menu_item').height()+10;
+var result = $(".TossadeMar").offset().top;
+var result3 = $(".TossadeMar").height();
+var result4 = result+result3-item;
+console.log(result4);
+// console.log(item);
+// console.log(result2);
+// console.log(result3);
+
 // Left side SPY when scrolling
-$(window).scroll(function(){
+$(document).scroll(function(){
   var pageY = pageYOffset;
-//console.log(pageY)
-if (pageY > 102 && pageY < 207 ) {
+  console.log(pageY)
+  if (pageY > result && pageY <= result4) {
+    // console.log('hi');
   // $('#0').removeClass('active');
   $('#tag_1').addClass('active');
 }else{
   $('#tag_1').removeClass('active');
 }
 
-if (pageY > 207 && pageY < 335) {
+if (pageY >= result4) {
+  // console.log('hi');
   $('#tag_2').addClass('active');
 }else{
   $('#tag_2').removeClass('active');
 }
 
-if (pageY > 335 && pageY < 465) {
-  $('#tag_3').addClass('active');
-}else{
-  $('#tag_3').removeClass('active');
-}
+// if (pageY > 335 && pageY < 465) {
+//   $('#tag_3').addClass('active');
+// }else{
+//   $('#tag_3').removeClass('active');
+// }
 
-if (pageY > 465 && pageY < 595) {
-  $('#tag_4').addClass('active');
-}else{
-  $('#tag_4').removeClass('active');
-}
+// if (pageY > 465 && pageY < 595) {
+//   $('#tag_4').addClass('active');
+// }else{
+//   $('#tag_4').removeClass('active');
+// }
 
 if (pageY > 595 && pageY < 725) {
   $('#tag_5').addClass('active');
@@ -98,12 +114,9 @@ if (pageY > 1765 && pageY < 1895) {
 }
 });
 
-/*
-
-
 $("#tag_1").bind("click", function() {
   $('body').animate({
-    scrollTop: $('.TossadeMar').offset().top
+    scrollTop: $('.TossadeMar').offset().top+10
 }, 1000); //scroll to div with container as ID.
     return false; //Prevent Default and event bubbling.
   });
@@ -111,7 +124,7 @@ $("#tag_1").bind("click", function() {
 $("#tag_2").bind("click", function() {
   //$('#10').addClass('active');
   $('body').animate({
-    scrollTop: $('.Begur').offset().top
+    scrollTop: $('.Begur').offset().top+10
 }, 1000); //scroll to div with container as ID.
     return false; //Prevent Default and event bubbling.
   });
@@ -211,7 +224,5 @@ $("#tag_14").bind("click", function() {
 }, 1000); //scroll to div with container as ID.
     return false; //Prevent Default and event bubbling.
   });
-
-*/
 
 });
