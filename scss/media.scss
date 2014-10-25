@@ -2,7 +2,7 @@
 @import "variables.scss";
 @import "mixins.scss";
 @mixin phones {
-  @media only screen and (min-width: 400px) and (max-width: 580px){
+  @media only screen and (min-width: 300px) and (max-width: 580px){
     @content; // Añadimos todos los atributos con sus propiedades cuando llamamos al mixin
   }
 }

@@ -3,7 +3,7 @@
   display: block;
   margin: 0 auto;
   margin-top: 15px;
-  width: 250px;
+  width: 100%;
   height: 45px;
   background-color: #2ba6cb;
   background: linear-gradient(#2ba6cb, #2896B6);
@@ -12,8 +12,8 @@
   text-transform: uppercase;
   font-size: 20px;
   font-weight: bold;
-  color: white;
-  text-shadow: 0 1px 0 #000;
+  color: #CBCBCB;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.6);
   box-shadow: 0 4px 0 #21728B, 0 8px 8px rgba(0, 0, 0, 0.6);
   cursor: pointer;
   margin-bottom: 15px;
@@ -26,16 +26,30 @@
   height: 5px;
   top: -11px;
   left: -10px;
-  width: 250px; }
-
-.btn-blue:hover, .btn-blue:focus {
-  text-shadow: 0 1px 0 #000;
-  outline: 0; }
+  width: 100%; }
 
 .btn-blue:active {
-  background-color: #2ba6cb;
   background: linear-gradient(#2896B6, #2ba6cb);
-  box-shadow: 0 2px 0 #21728B, 0 4px 4px rgba(0, 0, 0, 0.6); }
+  text-shadow: 0 -2px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: 1px -2px 1px #1E647A; }
+
+.btn-blue:active:after {
+  content: "";
+  position: absolute;
+  box-shadow: 0 -10px 8px rgba(0, 0, 0, 0.3);
+  height: 5px;
+  top: 5px;
+  left: 0;
+  width: 100%; }
+
+.btn-blue:active:before {
+  content: "";
+  position: absolute;
+  box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.8);
+  height: 5px;
+  top: 30px;
+  left: -10px;
+  width: 100%; }
 
 * {
   margin: 0;
@@ -148,7 +162,7 @@ a:hover {
       float: right;
       text-decoration: none;
       font-size: 14px; } }
-@media only screen and (min-width: 400px) and (max-width: 580px) {
+@media only screen and (min-width: 300px) and (max-width: 580px) {
   #main {
     width: 100%;
     padding: 0;
@@ -215,7 +229,7 @@ a:hover {
     article img {
       width: 100px;
       height: 100px; } }
-@media only screen and (min-width: 400px) and (max-width: 580px) {
+@media only screen and (min-width: 300px) and (max-width: 580px) {
   article {
     margin-top: 15px;
     padding-right: 5px;
