@@ -1,0 +1,10 @@
+@import "links.scss";
+
+@mixin border-commit {
+  background-color: $primaryColor;
+  background: linear-gradient($primaryColor, #22819c);
+  border-radius: 10px;
+  border-top: 1px solid #30b5dc;
+  border-bottom: 1px solid #217e9a;
+  box-shadow: 0px 1px 0px #838383;
+}

@@ -1,0 +1,244 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+.btn-blue {
+  display: block;
+  margin: 0 auto;
+  margin-top: 15px;
+  width: 250px;
+  height: 45px;
+  background-color: #2ba6cb;
+  background: linear-gradient(#2ba6cb, #2896B6);
+  border: 0 none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  color: #1F697F;
+  text-shadow: 0 1px 0 #000;
+  box-shadow: 0 4px 0 #21728B, 0 8px 8px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  margin-bottom: 15px;
+  position: relative; }
+
+.btn-blue:after {
+  content: "";
+  position: absolute;
+  box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.8);
+  height: 5px;
+  top: -11px;
+  left: -10px;
+  width: 250px; }
+
+.btn-blue:hover, .btn-blue:focus {
+  text-shadow: 0 1px 0 #000;
+  -webkit-animation: pulsate 1.2s linear infinite;
+  animation: pulsate 1.2s linear infinite;
+  outline: 0; }
+
+.btn-blue:active {
+  background-color: #2ba6cb;
+  background: linear-gradient(#2896B6, #2ba6cb);
+  box-shadow: 0 2px 0 #21728B, 0 4px 4px rgba(0, 0, 0, 0.6); }
+
+@-webkit-keyframes pulsate {
+  0% {
+    color: #ddd;
+    text-shadow: 0 1px 0 #000; }
+  50% {
+    color: #fff;
+    text-shadow: 0 1px 0 #444, 0 0 5px #ffd, 0 0 8px #fff; }
+  100% {
+    color: #ddd;
+    text-shadow: 0 1px 0 #000; } }
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #edeff0;
+  color: #8c989e;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 1;
+  position: relative;
+  text-rendering: geometricPrecision;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Montserrat', sans-serif; }
+
+a {
+  color: #2ba6cb;
+  text-decoration: none; }
+
+a:hover {
+  color: #2795b6;
+  text-decoration: none; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+#main {
+  padding: 10px;
+  width: 900px;
+  margin: 40px auto; }
+  #main section.important, #main section.recomended {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    background-color: white;
+    margin-bottom: 10px; }
+    #main section.important aside.thumbs a, #main section.recomended aside.thumbs a {
+      margin-top: 5px;
+      margin-left: 10px;
+      float: right;
+      text-decoration: none;
+      font-size: 14px;
+      padding-right: 10px; }
+  #main section.important h1, #main section.recomended h1 {
+    display: block;
+    text-align: center;
+    font-size: 32px;
+    color: #384047;
+    font-weight: 500;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f1f1f1; }
+  #main article header {
+    text-align: left;
+    margin-left: 145px;
+    color: #222;
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-top: 15px; }
+  #main article img.img {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    float: left;
+    margin-left: 10px;
+    margin-top: -25px;
+    margin-right: 10px;
+    margin-bottom: 5px; }
+  #main article p {
+    padding-right: 10px; }
+
+@media only screen and (min-width: 580px) and (max-width: 940px) {
+  #main {
+    width: 100%; }
+    #main section.important, #main section.recomended {
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      border-radius: 5px; }
+      #main section.important h1, #main section.recomended h1 {
+        display: block;
+        text-align: center;
+        font-size: 32px;
+        color: white;
+        font-weight: 500;
+        background-color: #1f326c;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ccc;
+        border-top: 1px solid #ccc; }
+      #main section.important article header, #main section.recomended article header {
+        text-align: left;
+        margin-left: 120px;
+        color: #222;
+        font-size: 20px;
+        margin-bottom: 5px;
+        margin-top: 15px; }
+    #main aside.thumbs a {
+      margin-top: 5px;
+      margin-left: 10px;
+      float: right;
+      text-decoration: none;
+      font-size: 14px; } }
+@media only screen and (min-width: 400px) and (max-width: 580px) {
+  #main {
+    width: 100%;
+    padding: 0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px; }
+    #main section.important h1, #main section.recomended h1 {
+      display: block;
+      text-align: center;
+      font-size: 32px;
+      color: white;
+      font-weight: 500;
+      background-color: #1f326c;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #ccc;
+      border-top: 1px solid #ccc; }
+    #main section.important article header, #main section.recomended article header {
+      text-align: left;
+      margin-left: 70px;
+      color: #222;
+      font-size: 20px;
+      margin-bottom: 5px;
+      margin-top: 15px; }
+    #main section.important aside.thumbs a, #main section.recomended aside.thumbs a {
+      margin-top: 5px;
+      margin-left: 10px;
+      float: right;
+      text-decoration: none;
+      font-size: 14px; } }
+@media only screen and (min-width: 580px) and (max-width: 940px) {
+  section.important article:nth-child(odd) img.img {
+    float: right;
+    margin-left: 10px; }
+
+  section.important article:nth-child(even) img.img {
+    float: left;
+    margin-right: 10px; }
+
+  section.recomended article:nth-child(odd) img.img {
+    float: right;
+    margin-left: 10px; }
+
+  section.recomended article:nth-child(even) img.img {
+    float: left;
+    margin-right: 10px; }
+
+  article {
+    margin-top: 15px;
+    padding-right: 5px;
+    padding-left: 15px;
+    text-align: justify;
+    border-bottom: 1px solid #f1f1f1;
+    padding-bottom: 10px; }
+    article header {
+      text-align: center;
+      color: #222;
+      font-size: 20px;
+      margin-bottom: 5px; }
+    article img {
+      width: 100px;
+      height: 100px; } }
+@media only screen and (min-width: 400px) and (max-width: 580px) {
+  article {
+    margin-top: 15px;
+    padding-right: 5px;
+    padding-left: 15px;
+    text-align: justify;
+    border-bottom: 1px solid #f1f1f1;
+    padding-bottom: 10px; }
+    article header {
+      text-align: center;
+      color: #222;
+      font-size: 20px;
+      margin-bottom: 5px; }
+    article img {
+      width: 50px;
+      height: 50px;
+      float: left;
+      margin-right: 10px; } }
+
+/*# sourceMappingURL=style.css.map */
