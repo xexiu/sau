@@ -115,6 +115,10 @@ button.buttonUp {
   @include btn-blueIndex-pc;
   font-size: 25px;
   width: 100%;
+  & a {
+    color: white;
+    text-decoration: none;
+  }
 }
 
 div.divInfoIndexContent1 {
