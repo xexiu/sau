@@ -20,7 +20,7 @@ $(document).ready(function() {
     var aside_menu_nav_ul_li = document.createElement('li');
     aside_menu_nav_ul_li.id = 'tag_'+tossa[i].id;
     aside_menu_nav_ul_li.className = 'menu_item';
-    var aside_menu_nav_ul_li_inner = '<a href="#'+tossa[i].view+'">' + begur[i].view + '</a>'; // Trim double quotes (no quotes)
+    var aside_menu_nav_ul_li_inner = '<a href="#'+tossa[i].view+'">' + tossa[i].view + '</a>'; // Trim double quotes (no quotes)
     aside_menu_nav_ul_li.innerHTML = aside_menu_nav_ul_li_inner;
     aside_menu.appendChild(aside_menu_nav).appendChild(aside_menu_nav_ul).appendChild(aside_menu_nav_ul_li);
   }
