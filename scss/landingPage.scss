@@ -16,6 +16,10 @@ html, body {
 	margin: 0;
 }
 
+  .displaypc {
+   display: none;
+  }
+
 #main {
   width: 100%;
   margin: 0px auto;
@@ -58,19 +62,20 @@ li.logo {
   background-color: black;
 }
 
-  .displaypc {
-   display: none !important;
-  }
   //MENU PC//////////////////////////
   ul.menupc {
     float: right;
   }
 
   ul.menupc li {
+    background-color: #000000;
     font-size: 20px;
     text-shadow: 1px 2px #000000;
     display: inline-block;
+    border-radius: 1px;
     margin: 0px 20px 0px 0px;
+    padding: 10px;
+    opacity: 0.8;
   }
 
   ul.menupc li a {
@@ -122,12 +127,11 @@ li.logo {
   }
 
   section.sectionCommit {
-    background-color: #ff6600;
     margin: 0 auto;
     width: 990px;
   }
 
-  div.boxCommit {
+  div.boxCommitPc {
     position: absolute;
     display: inline-block;
     width: 0px;
@@ -137,15 +141,15 @@ li.logo {
     border-bottom: 15px solid $primaryColor;
   }
 
-  div.boxCommit:nth-child(1) {
+  div.boxCommitPc:nth-child(1) {
     margin: 45px 0px 0px 35px;
   }
 
-  div.boxCommit:nth-child(3) {
+  div.boxCommitPc:nth-child(3) {
     margin: 45px 0px 0px 35px;
   }
 
-  div.boxCommit:nth-child(5) {
+  div.boxCommitPc:nth-child(5) {
     margin: 45px 0px 0px 35px;
   }
 
@@ -180,8 +184,19 @@ li.logo {
     margin-top: 30px;
     margin-right: 50px;
   }
+//************************************************
 //Phonnes*****************************************
+//************************************************
 @include phones {
+
+  .displaypc {
+   display: block !important;
+  }
+
+ .menupc {
+  display: none;
+ }
+
  main {
   margin: 0;
   background-color: #f1f1f1;
@@ -257,22 +272,23 @@ header.header ul li.mainLink ul.dropDown {
   }
 
   h1.h1FirstTitle {
-    font: bold 25px 'Arial';
+    font: bold 18px 'Arial';
     color: #ffffff;
   }
 
   h2.h2SecondTitle {
-    font: bold 18px 'Arial';
+    font: bold 14px 'Arial';
     margin-top: 8px;
     color: #eae8e3;
   }
 
   section.sectionUp {
-  	margin-top: 80px;
+  	margin: 80px 0px 0px 80px;
   }
 
   button.buttonUp {
   	@include btn-blueIndex;
+    font-size: 14px;
   }
 
   div.contentCommit {
@@ -285,7 +301,15 @@ header.header ul li.mainLink ul.dropDown {
     width: 400px;
   }
 
-  div.boxCommit {
+  div.boxCommitPc {
+    display: none;
+  }
+
+  div.boxCommitTablet {
+    display: none;
+  }
+
+  div.boxCommitPhone {
     margin: 20px 0px 0px 20px;
     width: 0px;
     height: 0px;
@@ -324,8 +348,14 @@ header.header ul li.mainLink ul.dropDown {
   }
 
 }
+//************************************************
 //Tablets*****************************************
+//************************************************
 @include tablets {
+  .displaypc {
+   display: none !important;
+  }
+
  main {
   margin: 0;
   background-color: #f1f1f1;
@@ -400,10 +430,6 @@ header.header ul li.mainLink ul.dropDown {
     }
   }
 
-  .displaypc {
-   display: block !important;
-  }
-
   h1.h1FirstTitle {
     font: bold 30px 'Arial';
     color: #ffffff;
@@ -416,11 +442,12 @@ header.header ul li.mainLink ul.dropDown {
   }
 
   section.sectionUp {
-    margin-top: 280px;
+    margin: 150px 0px 0px 190px;
   }
 
   button.buttonUp {
     @include btn-blueIndex;
+
   }
 
   div.contentCommit {
@@ -432,8 +459,17 @@ header.header ul li.mainLink ul.dropDown {
     width: 550px;
   }
 
-  div.boxCommit {
-    margin: 20px 0px 0px 20px;
+  div.boxCommitPc {
+    display: none;
+  }
+
+  div.boxCommitPhone {
+    display: none;
+  }
+
+  div.boxCommitTablet {
+    background-color: #ff6600;
+    margin: 0px 0px 0px 0px;
     width: 0px;
     height: 0px;
     border-left: 15px solid transparent;

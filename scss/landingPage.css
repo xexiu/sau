@@ -17,6 +17,9 @@ html, body {
   padding: 0;
   margin: 0; }
 
+.displaypc {
+  display: none; }
+
 #main {
   width: 100%;
   margin: 0px auto; }
@@ -56,17 +59,18 @@ li.logo {
   border-radius: 25px;
   background-color: black; }
 
-.displaypc {
-  display: none !important; }
-
 ul.menupc {
   float: right; }
 
 ul.menupc li {
+  background-color: #000000;
   font-size: 20px;
   text-shadow: 1px 2px #000000;
   display: inline-block;
-  margin: 0px 20px 0px 0px; }
+  border-radius: 1px;
+  margin: 0px 20px 0px 0px;
+  padding: 10px;
+  opacity: 0.8; }
 
 ul.menupc li a {
   text-decoration: none;
@@ -119,11 +123,10 @@ div.contentCommit {
   width: 100%; }
 
 section.sectionCommit {
-  background-color: #ff6600;
   margin: 0 auto;
   width: 990px; }
 
-div.boxCommit {
+div.boxCommitPc {
   position: absolute;
   display: inline-block;
   width: 0px;
@@ -132,13 +135,13 @@ div.boxCommit {
   border-right: 15px solid transparent;
   border-bottom: 15px solid #2ba6cb; }
 
-div.boxCommit:nth-child(1) {
+div.boxCommitPc:nth-child(1) {
   margin: 45px 0px 0px 35px; }
 
-div.boxCommit:nth-child(3) {
+div.boxCommitPc:nth-child(3) {
   margin: 45px 0px 0px 35px; }
 
-div.boxCommit:nth-child(5) {
+div.boxCommitPc:nth-child(5) {
   margin: 45px 0px 0px 35px; }
 
 div.contentCommit section.sectionCommit article.articleCommit {
@@ -175,6 +178,12 @@ h1.h1Commit {
   margin-right: 50px; }
 
 @media only screen and (min-width: 300px) and (max-width: 580px) {
+  .displaypc {
+    display: block !important; }
+
+  .menupc {
+    display: none; }
+
   main {
     margin: 0;
     background-color: #f1f1f1; }
@@ -249,16 +258,16 @@ h1.h1Commit {
       border-radius: 5px; }
 
   h1.h1FirstTitle {
-    font: bold 25px 'Arial';
+    font: bold 18px 'Arial';
     color: #ffffff; }
 
   h2.h2SecondTitle {
-    font: bold 18px 'Arial';
+    font: bold 14px 'Arial';
     margin-top: 8px;
     color: #eae8e3; }
 
   section.sectionUp {
-    margin-top: 80px; }
+    margin: 80px 0px 0px 80px; }
 
   button.buttonUp {
     background-color: #2ba6cb;
@@ -273,7 +282,8 @@ h1.h1Commit {
     border-radius: 20px;
     width: 100%;
     color: #ffffff;
-    cursor: pointer; }
+    cursor: pointer;
+    font-size: 14px; }
 
   div.contentCommit {
     width: 100%; }
@@ -283,7 +293,13 @@ h1.h1Commit {
     margin: 0 auto;
     width: 400px; }
 
-  div.boxCommit {
+  div.boxCommitPc {
+    display: none; }
+
+  div.boxCommitTablet {
+    display: none; }
+
+  div.boxCommitPhone {
     margin: 20px 0px 0px 20px;
     width: 0px;
     height: 0px;
@@ -321,6 +337,9 @@ h1.h1Commit {
     border: solid 1px #ffffff;
     border-radius: 100%; } }
 @media only screen and (min-width: 580px) and (max-width: 940px) {
+  .displaypc {
+    display: none !important; }
+
   main {
     margin: 0;
     background-color: #f1f1f1; }
@@ -394,9 +413,6 @@ h1.h1Commit {
       -ms-border-radius: 5px;
       border-radius: 5px; }
 
-  .displaypc {
-    display: block !important; }
-
   h1.h1FirstTitle {
     font: bold 30px 'Arial';
     color: #ffffff; }
@@ -407,7 +423,7 @@ h1.h1Commit {
     color: #eae8e3; }
 
   section.sectionUp {
-    margin-top: 280px; }
+    margin: 150px 0px 0px 190px; }
 
   button.buttonUp {
     background-color: #2ba6cb;
@@ -431,8 +447,15 @@ h1.h1Commit {
     margin: 0 auto;
     width: 550px; }
 
-  div.boxCommit {
-    margin: 20px 0px 0px 20px;
+  div.boxCommitPc {
+    display: none; }
+
+  div.boxCommitPhone {
+    display: none; }
+
+  div.boxCommitTablet {
+    background-color: #ff6600;
+    margin: 0px 0px 0px 0px;
     width: 0px;
     height: 0px;
     border-left: 15px solid transparent;

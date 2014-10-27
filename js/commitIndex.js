@@ -12,7 +12,7 @@ div.appendChild(section);
 for(i = 0; i < commitJson.length; i++){
 
 	var div = document.createElement('div');
-	div.className = 'boxCommit';
+	div.className = 'boxCommitPc boxCommitTablet boxCommitPhone';
 	section.appendChild(div);
 
 	var article = document.createElement('article');
