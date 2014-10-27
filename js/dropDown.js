@@ -10,13 +10,13 @@ $(document).ready(function(e){
   }); // Stop the bubble to go outside
 
   $(document).click(function(){
-    $('.dropDown').slideUp();
+    $('.dropDown').fadeOut();
   }); // Close the drop-down when clicking outside of it
 
   $(document).keyup(function(e) {
     if (e.keyCode === 27) {
       var _self = $('.dropDown');
-      $(_self).slideUp();
+      $(_self).fadeOut();
     }
   }); // Press ESC will also close the drop-down
 });

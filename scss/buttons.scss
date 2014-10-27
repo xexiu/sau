@@ -56,3 +56,47 @@
   left: -10px;
   width: 100%;
 }
+
+%btn-blue:hover, %btn-blue:focus {
+  text-shadow: 0 1px 0 #000;
+  outline: 0;
+}
+
+%btn-blue:active {
+  background-color: $primaryColor;
+  background: linear-gradient(#2896B6, $primaryColor);
+  box-shadow: 0 2px 0 #21728B, 0 4px 4px rgba(0,0,0,0.6);
+}
+
+@mixin btn-blueIndex { //Uli
+  background-color: $primaryColor;
+  background: linear-gradient($primaryColor, #2896B6);
+  position: relative;
+  padding: 8px 15px 8px 15px;
+  margin-top: 20px;
+  z-index: 1;
+  border-style: solid none solid none;
+  border-top: 1px solid #30b5dc;
+  border-bottom: 1px solid #217e9a;
+  border-radius: 20px;
+  //box-shadow: 0px 2px 0px rgba(#a1a1a1, 0.5);//Opacity
+  width: 100%;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+@mixin btn-blueIndex-pc { //Uli
+  background-color: $primaryColor;
+  background: linear-gradient($primaryColor, #2896B6);
+  position: relative;
+  padding: 8px 15px 8px 15px;
+  margin-top: 20px;
+  z-index: 1;
+  border-style: solid none solid none;
+  border-top: 1px solid #30b5dc;
+  border-bottom: 1px solid #217e9a;
+  border-radius: 20px;
+  //box-shadow: 0px 2px 0px rgba(#a1a1a1, 0.5);//Opacity
+  color: #ffffff;
+  cursor: pointer;
+}
