@@ -12,14 +12,14 @@ $(window).scroll(function(){
 $(window).scroll(function(){
   var pageY = pageYOffset;
   console.log(pageY)
-  if (pageY > 100 && pageY < 215 ) {
+  if (pageY > 100 && pageY < 225 ) {
   // $('#0').removeClass('active');
   $('#tag_1').addClass('active');
 }else{
   $('#tag_1').removeClass('active');
 }
 
-if (pageY > 215 && pageY < 315) {
+if (pageY > 225 && pageY < 315) {
   $('#tag_2').addClass('active');
 }else{
   $('#tag_2').removeClass('active');
