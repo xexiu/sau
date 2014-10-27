@@ -8,7 +8,6 @@ $(document).ready(function() {
   //console.log(filename);
   $("a[href='"+filename+"']").addClass('active-link');
 
-
   var main = document.getElementById('main');
   var aside_menu = document.getElementById('menu_items');
   var aside_menu_nav = document.createElement('nav');
