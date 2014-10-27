@@ -16,10 +16,10 @@ html, body {
 	margin: 0;
 }
 
-main {
-  margin: 0;
-  background-color: #f1f1f1;
-}
+#main {
+  width: 100%;
+  margin: 0px auto;
+    }
 
 div.contentHeader {
   position: relative;
@@ -58,56 +58,63 @@ li.logo {
   background-color: black;
 }
 
-header.header ul li.mainLink:nth-child(2) {
- float: right;
- cursor: pointer;
- margin-top: -10px;
-}
-
-header.header ul li.mainLink ul.dropDown {
-    @include border-radius;//
-    position: absolute;
-    display: none;
-    right: 5%;
-    margin-top: 30px;
-    background-color: #222;
-    width: 40%;
-    cursor: pointer;
-    opacity: 0.8;
-    z-index: 3;
+  .displaypc {
+   display: none !important;
+  }
+  //MENU PC//////////////////////////
+  ul.menupc {
+    float: right;
   }
 
-  ul.dropDown li a {
-    color: white;
-    text-decoration: none;
-    width: 98.5%;
-    padding: 5px 0px 5px 5px;
+  ul.menupc li {
+    font-size: 20px;
+    text-shadow: 1px 2px #000000;
     display: inline-block;
-    text-align: center;
-    &:hover {//
-      background-color: #333;
-      @include border-radius;
-    }
+    margin: 0px 20px 0px 0px;
+  }
+
+  ul.menupc li a {
+    text-decoration:none;
+    color: #ffffff;
   }
 
   section.sectionUp {
-    margin-top: 300px;
+    margin: 200px 0px 0px 350px;
+  }
+
+  article.articleUp {
+    width: 70%;
   }
 
   h1.h1FirstTitle {
     font: bold 40px 'Arial';
+    text-shadow: 1px 2px #000000;
     color: #ffffff;
   }
 
   h2.h2SecondTitle {
     font: bold 28px 'Arial';
+    text-shadow: 1px 2px #000000;
     margin-top: 8px;
     color: #eae8e3;
   }
 
   button.buttonUp {
     @include btn-blueIndex-pc;
-    width: 30%;
+    font-size: 25px;
+    width: 100%;
+  }
+
+  div.divInfoIndexContent1 {
+    background-color: #ff6600;
+    height: 400px;
+  }
+
+  section#important {
+    background-color: #ffffff;
+    margin: 0 auto;
+    width: 75%;
+    height: 400px;
   }
 
   div.contentCommit {
@@ -117,11 +124,12 @@ header.header ul li.mainLink ul.dropDown {
   section.sectionCommit {
     background-color: #ff6600;
     margin: 0 auto;
-    width: 80%;
+    width: 990px;
   }
 
   div.boxCommit {
-    margin: 0px 0px 0px 20px;
+    position: absolute;
+    display: inline-block;
     width: 0px;
     height: 0px;
     border-left: 15px solid transparent;
@@ -129,12 +137,26 @@ header.header ul li.mainLink ul.dropDown {
     border-bottom: 15px solid $primaryColor;
   }
 
+  div.boxCommit:nth-child(1) {
+    margin: 45px 0px 0px 35px;
+  }
+
+  div.boxCommit:nth-child(3) {
+    margin: 45px 0px 0px 35px;
+  }
+
+  div.boxCommit:nth-child(5) {
+    margin: 45px 0px 0px 35px;
+  }
+
   div.contentCommit section.sectionCommit article.articleCommit {
     @include border-commit;
+    position: relative;
+    float: left;
     border-top: none;
-    margin-bottom: 20px;
+    margin: 60px 0px 20px 20px;
     padding: 8px;
-    width: 38%;
+    width: 300px;
     color: #eae8e3;
     vertical-align: middle;
   }
@@ -143,20 +165,20 @@ header.header ul li.mainLink ul.dropDown {
     margin-left: 12px;
   }
 
-  h1.h1Commit {
-    float: right;
-    font: 12px 'arial';
-    margin-top: 30px;
-    margin-right: 125px;
-  }
-
   img.imgCommit {
     margin-top: 8px;
-    margin-left: 120px;
+    margin-left: 80px;
     width: 60px;
     height: 60px;
     border: solid 1px #ffffff;
     border-radius: 100%;
+  }
+
+    h1.h1Commit {
+    float: right;
+    font: 12px 'arial';
+    margin-top: 30px;
+    margin-right: 50px;
   }
 //Phonnes*****************************************
 @include phones {
@@ -258,6 +280,7 @@ header.header ul li.mainLink ul.dropDown {
   }
 
   section.sectionCommit {
+    display: inline-block;
     margin: 0 auto;
     width: 400px;
   }
@@ -375,6 +398,10 @@ header.header ul li.mainLink ul.dropDown {
       background-color: #333;
       @include border-radius;//
     }
+  }
+
+  .displaypc {
+   display: block !important;
   }
 
   h1.h1FirstTitle {
