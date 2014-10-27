@@ -83,23 +83,6 @@ dl {
   }
 }
 
-// Breadcrumb
-#breadcrumb {
-  position: absolute;
-  display: block;
-}
-#breadcrumb ul { list-style: none; }
-.crumbs { display: block; }
-.crumbs li {  display: inline; }
-.crumbs li.first { padding-left: 8px; }
-.crumbs li a, .crumbs li a:link, .crumbs li a:visited { color: #666; display: block; float: left; font-size: 12px; margin-left: -13px; padding: 7px 17px 11px 25px; position: relative; text-decoration: none; }
-
-.crumbs li a { background-image: url('../img/bg-crumbs.png');  background-repeat: no-repeat; background-position: 100% 0; position: relative; }
-.crumbs li a:hover { color: #333; background-position: 100% -48px; cursor: pointer; }
-.crumbs li a:active { color: #333; background-position: 100% -96px; }
-.crumbs li.first a span { height: 29px; width: 3px; border-left: 1px solid #d9d9d9; position: absolute; top: 0px; left: 0px;
-}
-
 .active-link {
   color: #333 !important;
   background-position: 100% -96px !important;
@@ -114,16 +97,17 @@ dl {
   opacity: .9;
   // Logo
   span#logo {
-    width: 50px;
+    width: 190px;
     height: 35px;
     //background-color: black;
     position: absolute;
     color: #222;
-    top: -25px;
-    right: 14px;
+    top: -35px;
+    left: 14px;
     & i {
       margin-left: 5px;
-      font-size: .9em;
+      font-size: 1.7em;
+      line-height: 35px;
     }
     & a {
       color: #222;
@@ -138,7 +122,7 @@ dl {
     position: absolute;
     display: block;
     margin-top: -40px;
-    margin-left: 5px;
+    margin-left: 232px;
   }
   #breadcrumb ul { list-style: none; }
   .crumbs { display: block; }
