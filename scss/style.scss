@@ -34,6 +34,13 @@ body {
   }
 }
 
+@include phones {
+  body:after {
+    content: '';
+    background: none;
+  }
+}
+
 a {
   color: $primaryColor;
   text-decoration: none;
